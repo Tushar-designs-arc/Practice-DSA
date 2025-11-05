@@ -8,9 +8,9 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
 
-        for (int j = 0; j < n; j++) {
+        for (int star = 0; star < n; star++) {
             cout << "* ";
         }
 
@@ -33,13 +33,13 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
 
-        for (int j = 0; j <= i; j++) {
+        for (int star = 0; star <= row; star++) {
             cout << "* ";
         }
         
-        for (int k = (n - i); k > 0; k--) { // Or, k = 0; k < (n - i); k++, (if condition k > 1, or k = 1. then, the extra line of spaces will not be printed.)
+        for (int space = (n - row); space > 0; space--) { // Or, space = 0; space < (n - row); space++, (if condition space > 1, or space = 1. then, the extra line of spaces will not be printed.)
             cout << "  ";
         }
         
@@ -62,13 +62,13 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
         
-        for (int j = (n - i); j > 0; j--) { // Or, j = 0; j < (n - i); j++
+        for (int star = (n - row); star > 0; star--) { // Or, star = 0; star < (n - row); star++
             cout << "* ";
         }
 
-        for (int k = 0; k <= i; k++) { // if condition k < i, ya k = 1; k <= i. then, the extra line of spaces will not be printed.
+        for (int space = 0; space <= row; space++) { // if condition space < row, ya space = 1; space <= row. then, the extra line of spaces will not be printed.
             cout << "  ";
         }
         
@@ -91,13 +91,13 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
 
-        for (int j = 0; j < (n - i); j++) { // Or, j = (n - i); j > 0; j--, (if j = 1, or condition j > 1. then, the extra line of spaces will not be printed.)
+        for (int space = 0; space < (n - row); space++) { // Or, space = (n - row); space > 0; space--, (if space = 1, or condition space > 1. then, the extra line of spaces will not be printed.)
             cout << "  ";
         }
 
-        for (int k = 0; k <= i; k++) {
+        for (int star = 0; star <= row; star++) {
             cout << "* ";
         }
 
@@ -120,13 +120,13 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
         
-        for (int j = 0; j <= i; j++) { // if j = 1, or condition j < i. then, the extra line of spaces will not be printed.
+        for (int space = 0; space <= row; space++) { // if space = 1, or condition space < row. then, the extra line of spaces will not be printed.
             cout << "  ";
         }
 
-        for (int k = (n - i); k > 0; k--) { // Or, k = 0; k < (n - i); k++
+        for (int star = (n - row); star > 0; star--) { // Or, star = 0; star < (n - row); star++
             cout << "* ";
         }
         
@@ -149,9 +149,9 @@ int main() {
     cout << "Enter the no. of rows: ";
     cin >> n; 
 
-    for (int i = 0; i < n; i++) {
+    for (int row = 0; row < n; row++) {
         
-        for (int j = 0; j <= i; j++) { // if j = 1, condition j < i. then, the extra line of spaces will not be printed.
+        for (int space = 0; space <= row; space++) { // if space = 1, condition space < row. then, the extra line of spaces will not be printed.
             cout << " ";
         }
         
