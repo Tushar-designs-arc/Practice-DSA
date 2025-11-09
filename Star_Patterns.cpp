@@ -181,7 +181,7 @@ int main() {
         }
 
         for (int space = 0; space <= row; space++) { // if space = 1, or condition space < row. then, the extra line of spaces will not be printed.
-            cout << "! ";
+            cout << "  ";
         }
 
         cout << endl;
@@ -194,7 +194,49 @@ int main() {
         }
 
         for (int space = (n - row); space > 0; space--) { // Or, space = 0; space < (n - row); space++, (if condition space > 1, or space = 1. then, the extra line of spaces will not be printed.)
-            cout << "! ";
+            cout << "  ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Reverse K Pattern */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the no. of rows: ";
+    cin >> n;
+
+    for (int row = 0; row < (n - 1); row++) { // condition row < (n - 1) to print only 4 starting rows.
+
+        for (int space = 0; space <= row; space++) { // if space = 1, or condition space < row. then, the extra line of spaces will not be printed.
+            cout << "  ";
+        }
+
+        for (int star = (n - row); star > 0; star--) { // Or, star = 0; star < (n - row); star++
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+
+    for (int row = 0; row < n; row++) { // this is printing the left half pyramid
+
+        for (int j = (n - row); j > 0; j--) { // Or, space = 0; space < (n - row); space++, (if space = 1, or condition space > 1. then, the extra line of spaces will not be printed.)
+            cout << "  ";
+        }
+
+        for (int k = 0; k <= row; k++) {
+            cout << "* ";
         }
 
         cout << endl;
