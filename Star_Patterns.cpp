@@ -20,6 +20,16 @@ int main() {
     return 0;
 }
 
+// Description:
+// Prints n × n grid of stars with space separation.
+// Logic: For each of n rows, print n "* " (star followed by space).
+
+// Output for n = 4:
+// * * * * 
+// * * * * 
+// * * * * 
+// * * * *
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
