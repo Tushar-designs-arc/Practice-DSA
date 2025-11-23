@@ -1,4 +1,4 @@
-/* Square Fill Pattern */
+/* ⭐ Square Fill Pattern */
 
 #include <iostream>
 using namespace std;
@@ -11,27 +11,31 @@ int main() {
     for (int row = 0; row < n; row++) {
 
         for (int star = 0; star < n; star++) {
-            cout << "* ";
+            cout << (star == (n - 1) ? "*" : "* "); // If it's the last star, print "*" (no trailing space). Otherwise print "* " to maintain spacing.
         }
 
-        cout << endl;
+        cout << endl; // Moves to the next row.
     }
 
     return 0;
 }
 
-// Description:
-// Prints n × n grid of stars with space separation.
-// Logic: For each of n rows, print n "* " (star followed by space).
+// For (n = 4):
+//  * * * *
+//  * * * *
+//  * * * *
+//  * * * *
 
-// Output for n = 4:
-// * * * * 
-// * * * * 
-// * * * * 
-// * * * *
+// 🎯 Input:
+//   • User enters any positive number n.
+//   • Program prints an n × n filled square.
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+// 🧠 Logic Breakdown:
+//   • Outer loop → controls the number of rows (n rows)
+//   • Inner loop → prints stars in each row (n columns)
+//   • Ternary operator → avoids printing extra trailing space after the last star (at the end of each row)
 
+// /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Right Half Pyramid */
 
@@ -61,19 +65,18 @@ int main() {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
 /* Reverse Right Half Pyramid */
 
 #include <iostream>
 using namespace std;
-    
+
 int main() {
     int n;
     cout << "Enter the no. of rows: ";
     cin >> n;
 
     for (int row = 0; row < n; row++) {
-        
+
         for (int star = (n - row); star > 0; star--) { // Or, star = 0; star < (n - row); star++
             cout << "* ";
         }
@@ -81,7 +84,7 @@ int main() {
         for (int space = 0; space <= row; space++) { // if condition space < row, ya space = 1; space <= row. then, the extra line of spaces will not be printed.
             cout << "  ";
         }
-        
+
         cout << endl;
     }
 
@@ -89,7 +92,6 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* Left Half Pyramid */
 
@@ -119,19 +121,18 @@ int main() {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
 /* Reverse Left Half Pyramid */
 
 #include <iostream>
 using namespace std;
-    
+
 int main() {
     int n;
     cout << "Enter the no. of rows: ";
     cin >> n;
 
     for (int row = 0; row < n; row++) {
-        
+
         for (int space = 0; space <= row; space++) { // if space = 1, or condition space < row. then, the extra line of spaces will not be printed.
             cout << "  ";
         }
@@ -139,40 +140,38 @@ int main() {
         for (int star = (n - row); star > 0; star--) { // Or, star = 0; star < (n - row); star++
             cout << "* ";
         }
-        
+
         cout << endl;
     }
-    
+
     return 0;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* Rhombus Pattern */
 
 #include <iostream>
 using namespace std;
-    
+
 int main() {
     int n;
     cout << "Enter the no. of rows: ";
-    cin >> n; 
+    cin >> n;
 
     for (int row = 0; row < n; row++) {
-        
+
         for (int space = 0; space <= row; space++) { // if space = 1, condition space < row. then, the extra line of spaces will not be printed.
             cout << " ";
         }
-        
+
         cout << "* * * *" << endl;
     }
-    
+
     return 0;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* K Pattern */
 
@@ -214,7 +213,6 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* Reverse K Pattern */
 
